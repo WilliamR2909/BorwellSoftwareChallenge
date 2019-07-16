@@ -1,0 +1,10 @@
+length=int(input("What is the length of the room in metres?"))
+width=int(input("What is the width of the room in metres?"))
+height=int(input("What is the height of the room in metres?"))
+floorArea=length*width
+paintAmount=(2*(length*height))+(2*(width*height))
+paintLitres=paintAmount/12
+roomVolume=floorArea*height
+print("The area of the floor is "+str(floorArea)+"m^2")
+print("The amount of paint required to cover the walls in one coat is "+str(paintAmount)+"m^2 which is "+str(round(paintLitres,1))+" litres of standard paint")
+print("The volume of the room is "+str(roomVolume)+"m^3")
